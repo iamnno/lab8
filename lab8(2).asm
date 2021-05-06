@@ -38,9 +38,9 @@ a5 dw 3
 FREQUENCY EQU 20
 TIME EQU 3500
 ;------------------------------------------------------------------------------
-MENU_COLOR EQU 0070h
-CURRENT_COLOR EQU 0020h
-OUTPUT_COLOR EQU 0020h
+MENU_COLOR EQU 0040h
+CURRENT_COLOR EQU 0050h
+OUTPUT_COLOR EQU 0060h
 ;------------------------------------------------------------------------------
 SYMBOLS_COUNT EQU 18
 TOP_ROW EQU  10
@@ -85,7 +85,7 @@ PROC clearScreen             ; Процедура для очищення екр
  M_pushRegisters
 
  mov ax, 0600h               ; Функція для залиття екрану
- mov bh, 30h                 ; Колір фону
+ mov bh, 00h                 ; Колір фону
  mov cx, 0                   ; Відступ зліва
  mov dx, 184Fh               ; dh, dl - кількість зафарбованих рядків, колонок
  int 10h                     ; Переривання BIOS
