@@ -17,11 +17,11 @@ STACK 2048		             ; Директива - розмір стеку
 ;----------------------------II.ПОЧАТОК СЕГМЕНТУ ДАНИХ-------------------------
 DATASEG
 ;------------------------------------------------------------------------------
-MENU db  '|----------------|'                    ; Меню програми
-     db  '| View creators  |'
-     db  '| Beep           |'
-     db  '| Solve equation |'
-     db  '|----------------|' 
+MENU db  '                  '                    ; Меню програми
+     db  '  View creators   '
+     db  '  Beep            '
+     db  '  Solve equation  '
+     db  '                  ' 
 ;------------------------------------------------------------------------------
 HELP_OUT db 'To select an item, use <Up/Down> arrow and press <Enter>. Press <Esc> to exit.'
 OUTPUT_SIZE=$-HELP_OUT
